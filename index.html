@@ -1,209 +1,1309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>
-        Aquarium Cleaning Services Bengaluru | Professional Aquarium Cleaner Bengaluru | Aquarium Cleaning Expert Bengaluru
-    </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>Aquarium Cleaning Services</title>
 
-        body {
-            min-height: 100vh;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(0, 24, 40, 0.92),
-                    rgba(0, 78, 110, 0.88)
-                ),
-                url("assets/images/aquarium-cleaning-services-bengaluru.webp")
-                center/cover no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            overflow-x: hidden;
-            position: relative;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        /* Fancy floating blur circles because humans
-           cannot leave a landing page alone for 3 seconds */
-        body::before,
-        body::after {
-            content: "";
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            z-index: 0;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        body::before {
-            width: 300px;
-            height: 300px;
-            background: rgba(0, 255, 200, 0.18);
-            top: -80px;
-            left: -80px;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-        body::after {
-            width: 250px;
-            height: 250px;
-            background: rgba(0, 150, 255, 0.2);
-            bottom: -80px;
-            right: -80px;
-        }
+<style>
 
-        .container {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            max-width: 900px;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 28px;
-            padding: 50px 35px;
-            text-align: center;
-            color: #ffffff;
-            box-shadow:
-                0 20px 50px rgba(0, 0, 0, 0.35),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .logo-image {
-            width: 100%;
-            max-width: 420px;
-            height: auto;
-            object-fit: contain;
-            margin-bottom: 30px;
-            border-radius: 22px;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
-            border: 4px solid rgba(255, 255, 255, 0.12);
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        h1 {
-            font-size: clamp(2rem, 4vw, 3.2rem);
-            line-height: 1.25;
-            font-weight: 700;
-            margin-bottom: 18px;
-            letter-spacing: 0.4px;
-        }
+body{
+    font-family:'Inter',sans-serif;
+    background:#f5f9ff;
+    color:#111827;
+    line-height:1.6;
+}
 
-        .highlight {
-            color: #7ef9ff;
-        }
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
 
-        p {
-            font-size: 1.08rem;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.88);
-            max-width: 700px;
-            margin: 0 auto 24px;
-        }
+/* =======================
+   NAVBAR
+======================= */
 
-        .status {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 14px 26px;
-            border-radius: 999px;
-            background: rgba(0, 255, 170, 0.15);
-            border: 1px solid rgba(0, 255, 170, 0.25);
-            color: #9effdf;
-            font-weight: 600;
-            font-size: 1rem;
-        }
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(233, 230, 230, 0.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #e5e7eb;
+}
 
-        .contact {
-            margin-top: 35px;
-        }
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
 
-        .contact a {
-            display: inline-block;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1.25rem;
-            font-weight: 700;
-            padding: 16px 34px;
-            border-radius: 14px;
-            background: linear-gradient(
-                135deg,
-                #00bcd4,
-                #009688
-            );
-            box-shadow: 0 10px 25px rgba(0, 188, 212, 0.35);
-            transition: all 0.3s ease;
-        }
+.brand{
+    text-decoration:none;
+    color:#111827;
+}
 
-        .contact a:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 18px 40px rgba(0, 188, 212, 0.45);
-        }
+.brand-title{
+    font-size:1.3rem;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
 
-        .footer-text {
-            margin-top: 24px;
-            font-size: 0.92rem;
-            color: rgba(255, 255, 255, 0.65);
-        }
+.brand-title i{
+    color:#0f766e;
+}
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 35px 22px;
-            }
+.brand-subtitle{
+    font-size:.85rem;
+    color:#6b7280;
+}
 
-            .contact a {
-                width: 100%;
-                max-width: 320px;
-            }
-        }
-    </style>
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:#111827;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#0f766e;
+}
+
+.nav-links i{
+    color:#0f766e;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:14px 22px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#0f766e;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#115e59;
+    transform:translateY(-2px);
+}
+
+.btn-whatsapp{
+    background:#15D366;
+    color:white;
+}
+
+.btn-whatsapp:hover{
+    transform:translateY(-2px);
+}
+
+.full{
+    width:100%;
+}
+
+/* =======================
+   HERO / CAROUSEL
+======================= */
+
+.hero{
+    padding:100px 0;
+    background:
+    linear-gradient(rgba(7,20,45,.75), rgba(7,20,45,.75)),
+    url('assets/images/aquarium-tank-mistakes.png');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:999px;
+    background:rgba(155,155,155,.15);
+    backdrop-filter:blur(8px);
+    margin-bottom:20px;
+    font-size:.9rem;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#dbe4f0;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.hero-card{
+    background:rgba(155,155,155,.12);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(155,155,155,.15);
+    padding:35px;
+    border-radius:24px;
+}
+
+.hero-card h2{
+    margin-bottom:20px;
+}
+
+.check-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.check-list div{
+    background:rgba(155,155,155,.1);
+    padding:14px;
+    border-radius:12px;
+}
+
+/* =======================
+   SECTION
+======================= */
+
+.section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#64748b;
+}
+
+/* =======================
+   SERVICES
+======================= */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-icon{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    background:#ecfeff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.service-icon i{
+    font-size:1.8rem;
+    color:#0f766e;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+}
+
+/* =======================
+   BLOGS
+======================= */
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.blog-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.blog-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.blog-content{
+    padding:15px;
+}
+
+.blog-content h3{
+    margin-bottom:12px;
+}
+
+.blog-content p{
+    color:#64748b;
+    margin-bottom:18px;
+}
+
+.blog-content a{
+    text-decoration:none;
+    color:#0f766e;
+    font-weight:600;
+}
+
+/* =======================
+   REVIEWS
+======================= */
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.review-card{
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+}
+
+.review-card i{
+    font-size:2rem;
+    color:#facc15;
+    margin-bottom:20px;
+}
+
+.review-card p{
+    color:#475569;
+    margin-bottom:20px;
+}
+
+.review-card strong{
+    color:#111827;
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+.footer{
+    background:#0f172a;
+    color:white;
+    padding:80px 0 30px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+    margin-bottom:50px;
+}
+
+.footer h3{
+    margin-bottom:20px;
+}
+
+.footer p,
+.footer a{
+    color:#cbd5e1;
+    text-decoration:none;
+    margin-bottom:10px;
+    display:block;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(155,155,155,.1);
+    padding-top:15px;
+    text-align:center;
+    color:#94a3b8;
+}
+
+/* =======================
+   FLOATING WHATSAPP
+======================= */
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#15D366;
+    color:white;
+    text-decoration:none;
+    padding:16px 22px;
+    border-radius:999px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+    box-shadow:0 10px 15px rgba(0,0,0,.2);
+    z-index:999;
+}
+
+.floating-whatsapp i{
+    font-size:1.3rem;
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media(max-width:768px){
+
+    .nav{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:space-around;
+        border-top:1px solid #e5e7eb;
+        padding-top:15px;
+        gap:10px;
+    }
+
+    .hero-grid,
+    .services-grid,
+    .blog-grid,
+    .review-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:70px 0;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .check-list{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .floating-whatsapp{
+        right:15px;
+        bottom:15px;
+        padding:14px 18px;
+        font-size:.9rem;
+    }
+
+}
+.service-features{
+    list-style:none;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.service-features li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#475569;
+    font-size:.95rem;
+}
+
+.service-features li i{
+    color:#10b981;
+    font-size:.85rem;
+}
+
+.service-card{
+    background:white;
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+    transition:.35s;
+    border:1px solid rgba(15,118,110,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.service-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(to right,#0f766e,#34d399);
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.1);
+}
+
+.service-icon{
+    width:72px;
+    height:72px;
+    border-radius:18px;
+    background:#ecfeff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:22px;
+}
+
+.service-icon i{
+    font-size:1.8rem;
+    color:#0f766e;
+}
+
+/* =======================
+   PREMIUM FOOTER
+======================= */
+
+.footer{
+    position:relative;
+    background:#071426;
+    color:white;
+    padding:90px 0 30px;
+    overflow:hidden;
+}
+
+.footer-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top right, rgba(15,118,110,.18), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(52,211,153,.12), transparent 35%);
+    pointer-events:none;
+}
+
+.footer .container{
+    position:relative;
+    z-index:2;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1.2fr;
+    gap:60px;
+    margin-bottom:60px;
+}
+
+/* BRAND */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:22px;
+}
+
+.footer-logo-icon{
+    width:62px;
+    height:62px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#0f766e,#34d399);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.6rem;
+}
+
+.footer-logo h2{
+    font-size:1.5rem;
+    margin-bottom:4px;
+}
+
+.footer-tagline{
+    color:#94a3b8;
+    font-size:.95rem;
+}
+
+.footer-description{
+    color:#cbd5e1;
+    line-height:1.8;
+    max-width:420px;
+    margin-bottom:30px;
+}
+
+/* SOCIALS */
+
+.footer-socials{
+    display:flex;
+    gap:14px;
+}
+
+.footer-socials a{
+    width:42px;
+    height:42px;
+    border-radius:12px;
+    background:rgba(255,255,255,.06);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.footer-socials a:hover{
+    background:#0f766e;
+    transform:translateY(-4px);
+}
+
+/* TITLES */
+
+.footer-title{
+    font-size:1.1rem;
+    margin-bottom:24px;
+    position:relative;
+    padding-bottom:10px;
+}
+
+.footer-title::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:45px;
+    height:3px;
+    border-radius:20px;
+    background:linear-gradient(to right,#0f766e,#34d399);
+}
+
+/* LINKS */
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.footer-links a{
+    color:#cbd5e1;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.footer-links a i{
+    color:#34d399;
+    font-size:.8rem;
+}
+
+.footer-links a:hover{
+    color:white;
+    transform:translateX(5px);
+}
+
+/* CONTACT */
+
+.footer-contact{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.footer-contact div{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    color:#cbd5e1;
+}
+
+.footer-contact i{
+    width:38px;
+    height:38px;
+    border-radius:10px;
+    background:rgba(255,255,255,.06);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#34d399;
+    flex-shrink:0;
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding-top:28px;
+}
+
+.footer-bottom-wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    color:#94a3b8;
+}
+
+.footer-policy{
+    display:flex;
+    gap:22px;
+}
+
+.footer-policy a{
+    color:#94a3b8;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-policy a:hover{
+    color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .footer{
+        padding:70px 0 110px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .footer-bottom-wrap{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-policy{
+        flex-wrap:wrap;
+        gap:14px;
+    }
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <div class="container">
+<!-- =======================
+     NAVBAR
+======================= -->
 
-        <img
-            src="assets/images/aquarium-cleaning-services-bengaluru.webp"
-            alt="Aquarium Cleaning Services Bengaluru"
-            class="logo-image"
-        >
+<header class="site-header">
 
-        <h1>
-            Aquarium Cleaning Services
-            <span class="highlight">Bengaluru</span>
-        </h1>
+<div class="container nav">
 
-        <p>
-            Professional aquarium cleaning, fish tank maintenance,
-            water treatment, algae removal, and complete aquarium care
-            services in Bengaluru. Because apparently fish also demand
-            luxury housekeeping now.
-        </p>
+<a href="#" class="brand">
 
-        <div class="status">
-            Website Under Construction • Launching Soon
-        </div>
+<div class="brand-title">
 
-        <div class="contact">
-            <a href="tel:+917892903319">
-                Call Us: 7892903319
-            </a>
-        </div>
+Aquarium Cleaning Services
+</div>
 
-        <div class="footer-text">
-            Aquarium Cleaning Expert Bengaluru
-        </div>
+<div class="brand-subtitle">
+Professional Aquarium Cleaning in Bangalore
+</div>
 
-    </div>
+</a>
+
+<nav class="nav-links">
+
+<a href="#home">
+
+<span>Home</span>
+</a>
+
+<a href="#services">
+
+<span>Services</span>
+</a>
+
+<a href="#services">
+
+<span>Products</span>
+</a>
+<a href="#blogs">
+
+<span>Blogs</span>
+</a>
+
+<a href="#reviews">
+
+<span>Reviews</span>
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- =======================
+     HERO / CAROUSEL
+======================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+Professional Aquarium Cleaning Within 15 KM
+</div>
+
+<h1>
+Keep Your Aquarium Lives Healthy
+</h1>
+
+<p>
+Professional aquarium cleaning, algae removal, filter maintenance and fish-safe cleaning services for homes and offices in Bangalore.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#services" class="btn btn-primary">
+<i class="fa-solid fa-tools"></i>
+Explore Services
+</a>
+
+<a 
+href="https://wa.me/917892903319?text=Hello%20Madhu,%20I%20need%20aquarium%20cleaning%20service"
+target="_blank"
+class="btn btn-whatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp Us
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<h2>What We Include</h2>
+
+<div class="check-list">
+
+<div><i class="fa-solid fa-soap"></i> Deep Tank Cleaning</div>
+
+<div><i class="fa-solid fa-hands"></i> Advanced Care</div>
+
+<div><i class="fa-solid fa-droplet"></i> Balanced Water Renewal</div>
+
+<div><i class="fa-solid fa-leaf"></i> Algae Treatment</div>
+
+<div><i class="fa-solid fa-fish-fins"></i> Fish Health Inspection</div>
+
+<div><i class="fa-solid fa-calendar-check"></i> Maintenance Plans</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+     SERVICES
+======================= -->
+
+<section class="section" id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="badge">
+Premium Aquarium Care
+</div>
+
+<h2>Our Professional Services</h2>
+
+<p>
+Reliable aquarium maintenance solutions designed for homes, offices and commercial spaces.
+</p>
+
+</div>
+
+<div class="services-grid">
+
+<!-- SERVICE 1 -->
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-water"></i>
+</div>
+
+<h3>Deep Tank Cleaning</h3>
+
+<p>
+Complete aquarium deep cleaning with glass polishing, substrate vacuuming and waste removal for crystal clear water.
+</p>
+
+<ul class="service-features">
+<li><i class="fa-solid fa-check"></i> Glass Cleaning</li>
+<li><i class="fa-solid fa-check"></i> Gravel Vacuum</li>
+<li><i class="fa-solid fa-check"></i> Waste Removal</li>
+</ul>
+
+</div>
+
+<!-- SERVICE 2 -->
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-filter"></i>
+</div>
+
+<h3>Advanced Filter Care</h3>
+
+<p>
+Professional filter maintenance and flow optimization to maintain healthy biological filtration and stable water quality.
+</p>
+
+<ul class="service-features">
+<li><i class="fa-solid fa-check"></i> Filter Cleaning</li>
+<li><i class="fa-solid fa-check"></i> Flow Inspection</li>
+<li><i class="fa-solid fa-check"></i> Media Rinse</li>
+</ul>
+
+</div>
+
+<!-- SERVICE 3 -->
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-fish-fins"></i>
+</div>
+
+<h3>Fish Health Inspection</h3>
+
+<p>
+Basic fish wellness observation and aquarium condition assessment to help identify visible stress or imbalance.
+</p>
+
+<ul class="service-features">
+<li><i class="fa-solid fa-check"></i> Fish Observation</li>
+<li><i class="fa-solid fa-check"></i> Algae Check</li>
+<li><i class="fa-solid fa-check"></i> Care Advice</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =======================
+     BLOGS
+======================= -->
+
+<section class="section" id="blogs" style="background:white;">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Latest Blogs</h2>
+
+<p>
+Aquarium care tips and maintenance guides
+</p>
+
+</div>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+
+<img src="assets/images/aquarium-tank-cleaning-bengaluru.png">
+
+<div class="blog-content">
+
+<h3>How Often Should You Clean Your Aquarium?</h3>
+
+<p>
+Learn the ideal aquarium cleaning schedule for healthy fish.
+</p>
+
+<a href="#">
+Read More →
+</a>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<img src="assets/images/aquarium-tank-mistakes.png">
+
+<div class="blog-content">
+
+<h3>Common Aquarium Mistakes</h3>
+
+<p>
+Avoid these common maintenance mistakes aquarium owners make.
+</p>
+
+<a href="#">
+Read More →
+</a>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<img src="assets/images/aquarium-water-change.png">
+
+<div class="blog-content">
+
+<h3>Best Water Change Practices</h3>
+
+<p>
+Proper water changing techniques for healthy aquarium life.
+</p>
+
+<a href="#">
+Read More →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+     REVIEWS
+======================= -->
+
+<section class="section" id="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Customer Reviews</h2>
+
+<p>
+Trusted by aquarium owners across the city
+</p>
+
+</div>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<i class="fa-solid fa-star"></i>
+
+<p>
+Very professional cleaning service. Aquarium looks crystal clear after every visit.
+</p>
+
+<strong>Rahul M.</strong>
+
+</div>
+
+<div class="review-card">
+
+<i class="fa-solid fa-star"></i>
+
+<p>
+Good fish handling and proper cleaning process. Highly recommended.
+</p>
+
+<strong>Priya S.</strong>
+
+</div>
+
+<div class="review-card">
+
+<i class="fa-solid fa-star"></i>
+
+<p>
+Reliable maintenance service for office aquariums and planted tanks.
+</p>
+
+<strong>Vinod S.</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+     PREMIUM FOOTER
+======================= -->
+
+<footer class="footer">
+
+<div class="footer-overlay"></div>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- BRAND -->
+
+<div class="footer-brand">
+
+<div class="footer-logo">
+
+<div class="footer-logo-icon">
+<i class="fa-solid fa-fish-fins"></i>
+</div>
+
+<div>
+
+<h2>Aquarium Cleaning Services</h2>
+
+<p class="footer-tagline">
+Professional Aquarium Maintenance & Cleaning
+</p>
+
+</div>
+
+</div>
+
+<p class="footer-description">
+
+Reliable aquarium cleaning services within 15 KM radius. 
+We specialize in deep tank cleaning, algae treatment, 
+filter maintenance and fish-safe aquarium care.
+
+</p>
+
+<div class="footer-socials">
+
+<a href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+<!-- QUICK LINKS -->
+
+<div>
+
+<h3 class="footer-title">
+Quick Links
+</h3>
+
+<div class="footer-links">
+
+<a href="#home">
+<i class="fa-solid fa-angle-right"></i>
+Home
+</a>
+
+<a href="#services">
+<i class="fa-solid fa-angle-right"></i>
+Services
+</a>
+
+<a href="#blogs">
+<i class="fa-solid fa-angle-right"></i>
+Blogs
+</a>
+
+<a href="#reviews">
+<i class="fa-solid fa-angle-right"></i>
+Reviews
+</a>
+
+</div>
+
+</div>
+
+<!-- CONTACT -->
+
+<div>
+
+<h3 class="footer-title">
+Contact Info
+</h3>
+
+<div class="footer-contact">
+
+<div>
+<i class="fa-solid fa-phone"></i>
+<span>7892903319</span>
+</div>
+
+<div>
+<i class="fa-solid fa-location-dot"></i>
+<span>Bangalore, Karnataka</span>
+</div>
+
+<div>
+<i class="fa-solid fa-clock"></i>
+<span>Mon - Sat : 9AM - 7PM</span>
+</div>
+
+<div>
+<i class="fa-solid fa-envelope"></i>
+<span>support@aquacare.in</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER BOTTOM -->
+
+<div class="footer-bottom">
+
+<div class="footer-bottom-wrap">
+
+<p>
+© 2026 Aquarium Cleaning Services. All Rights Reserved.
+</p>
+
+<div class="footer-policy">
+
+<a href="#">Privacy Policy</a>
+
+<a href="#">Site Map</a>
+
+<a href="#">Terms & Conditions</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a 
+class="floating-whatsapp"
+href="https://wa.me/917892903319?text=Hello%20Madhu,%20I%20need%20aquarium%20cleaning%20service"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<span>Chat Now</span>
+
+</a>
 
 </body>
 </html>
