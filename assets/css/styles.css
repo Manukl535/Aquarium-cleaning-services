@@ -134,7 +134,7 @@ body{
     padding:100px 0;
     background:
     linear-gradient(rgba(7,20,45,.75), rgba(7,20,45,.75)),
-    url('assets/images/aquarium-tank-mistakes.webp');
+    url('../images/aquarium.jpeg') no-repeat;
     background-size:cover;
     background-position:center;
     color:white;
